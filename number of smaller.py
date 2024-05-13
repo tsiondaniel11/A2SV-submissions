@@ -9,4 +9,4 @@ for i in b:
         if i > j:
             count += 1
     less_elements.append(count)
-print(less_elements)
+print(*less_elements)
