@@ -6,3 +6,18 @@ class Solution:
         s = s.replace('1','a').replace('2','b').replace('3','c').replace('4','d').replace('5','e').replace('6','f').replace('7','g')
         s = s.replace('8','h').replace('9','i')
         return s     
+
+
+
+class Solution:
+    def interpret(self, command: str) -> str:
+        comm = ""
+        for i in range(len(command)):
+            if command[i] == 'G':
+                comm += 'G'
+            elif command[i] == '(' and command[i+1] == ')':
+                comm += 'o'   
+            elif command[i] == '(' and command[i+1] == 'a':
+                comm += 'al'
+        return comm
+        
